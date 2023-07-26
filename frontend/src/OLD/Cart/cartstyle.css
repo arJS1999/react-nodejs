@@ -1,0 +1,23 @@
+h1{
+    text-align: center;
+    color: darkblue;
+}
+.product{
+    text-align: center;
+}
+h3{
+    text-align: center;
+    color:darkred
+}
+.button1 {padding: 5px 20px;}
+.button2 {padding: 5px 2px;float: right;}
+.blink{
+    animation: blinker 1s linear infinite;
+    color:red;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }

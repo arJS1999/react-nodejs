@@ -1,0 +1,31 @@
+openapi: 3.0.0
+info: 
+      title: Swagger
+      version: 1.0.0
+servers:
+      - url: http://localhost:8000
+tags:
+   - name: Category
+     description: Some description
+paths:
+  /category/getcategory:
+    get:
+      tags:
+        - Category
+      summary: Category
+      description: Category
+      operationId: category
+      responses:
+        '200':
+           description: Successful operation
+           content:
+             application/json:
+               examples:
+                 exam:
+                  $ref: '#/components/examples/GetCategory'
+components:
+  examples:
+    GetCategory:
+         value:
+            id: 1
+            name: Category                    
